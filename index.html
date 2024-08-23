@@ -27,16 +27,21 @@
                         "primary-1": "#ABEF5F",
                         "primary-2": "#ABEF5F80"
                     },
-                  
+
                 },
             },
         };
     </script>
+    <style>
+        .manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 
 
 </head>
 
-<body class="">
+<body class="manrope">
     <!-- header section -->
     <header class="container mx-auto  lg:w-3/4 px-3 pt-10  ">
         <!-- navbar  -->
@@ -46,7 +51,7 @@
                 <a href="#"><i class="fa-solid fa-arrow-right-long bg-primary-1 p-3 rounded-full -rotate-45"></i></a>
                 <a class="btn btn-ghost text-2xl font-bold">Rinterio</a>
             </div>
-            <div class="navbar-center hidden  lg:flex">
+            <div class="navbar-center hidden md:hidden lg:hidden 2xl:flex">
                 <ul class="menu menu-horizontal px-1 ">
                     <li><a>Home</a></li>
                     <li><a href="#">Services</a></li>
@@ -110,13 +115,13 @@
     <!-- main section -->
     <main>
         <!-- About section -->
-        <section class="bg-gray-200 lg:p-20 mt-20  py-10 ">
+        <section class="bg-gray-200 2xl:p-20 md:p-20 mt-20  py-10 ">
 
-            <div class=" grid grid-cols-1 lg:grid-cols-2 lg:w-3/4 mx-auto gap-5 px-3">
+            <div class=" grid grid-cols-1 2xl:grid-cols-2 md:grid-cols-1 2xl:w-3/4 mx-auto gap-5 px-3">
                 <!-- text content -->
                 <div>
                     <div class="lg:block hidden">
-                        <div class="bg-[url(./assets/Vector.png);] bg-no-repeat bg-contain pb-14 -ml-10 -mt-10   w-2/5"></div>
+                        <div class="bg-[url(./assets/Vector.png);] bg-no-repeat  pb-14 -ml-10 -mt-10   w-2/5"></div>
                     </div>
                     <div class="flex justify-center lg:justify-start">
                         <a href="#" class="btn rounded-3xl lg:ml-0  "><i class="fa-solid fa-arrow-right-long "></i>About
@@ -161,7 +166,7 @@
 
             </div>
             <!-- reating card -->
-            <div class=" grid grid-cols-1 lg:grid-cols-4 lg:w-3/4 p-3 mx-auto mt-20 ">
+            <div class=" grid grid-cols-1 2xl:grid-cols-4 md:grid-cols-2 2xl:w-3/4 p-3 mx-auto mt-20 ">
                 <div class="bg-white text-center space-y-3 p-4 ">
                     <a href="#"><i class="fa-regular fa-message text-2xl"></i></a>
                     <h1 class="font-bold text-2xl">235+</h1>
@@ -196,7 +201,7 @@
                         metal accents.</p>
                 </div>
                 <!-- card -->
-                <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 mt-10 p-3  lg:w-3/4 mx-auto">
+                <div class="grid grid-cols-1 2xl:grid-cols-4 md:grid-cols-2 gap-4 mt-10 p-3  2xl:w-3/4 mx-auto">
                     <!-- frist card -->
                     <div class="bg-pink-400 p-8 rounded-2xl opacity-80 space-y-3">
                         <img src="./assets/concept.png" alt="">
@@ -226,7 +231,7 @@
             </div>
         </section>
         <!-- letest portfolio -->
-        <section class="px-3 lg:w-3/4 mx-auto   ">
+        <section class="px-3 2xl:w-3/4 mx-auto   ">
             <!-- first content -->
             <div class="text-center mt-10">
                 <a href="#" class="btn rounded-full text-center"> <i class="fa-solid fa-arrow-right-long "></i>Expolore
@@ -239,15 +244,16 @@
                     metal accents.</p>
             </div>
             <!-- secend content -->
-            <div class=" grid grid-cols-1 lg:grid-cols-[2fr,700px,2fr]  gap-4 ">
+            <div class=" grid grid-cols-1 2xl:grid-cols-[2fr,700px,2fr] md:grid-cols-2
+            gap-4  h">
                 <!-- frist grid -->
-                <div class="flex flex-col lg:flex-row  border rounded-2xl lg:col-span-2 p-4 ">
+                <div class="flex flex-col md:flex-row lg:flex-row border rounded-2xl 2xl:col-span-2 md:col-span-2 p-4 ">
                     <!-- div 1 -->
-                    <div>
-                        <img src="./assets/img1.png" alt="" class="w-full ">
+                    <div class="w-full 2xl:w-1/2">
+                        <img src="./assets/img1.png" alt="" class="w-full h-full object-cover rounded-2xl ">
                     </div>
                     <!-- div 2 -->
-                    <div class="lg:ml-10">
+                    <div class="lg:ml-10 2xl:ml-10 md:w-full md:space-y-7  md:flex md:flex-col justify-center">
                         <h1 class="text-2xl font-bold mb-2">Commercial</h1>
                         <p class="text-gray-500   w-4/5">The barn house captivates with its blend of rustic charm and
                             modern. The barn house
@@ -259,19 +265,21 @@
                     </div>
                 </div>
                 <!-- secend grid -->
-                <div class=" p-4 border rounded-2xl ">
-                    <img src=" ./assets/img2.png" alt="" class="mx-auto h-full w-full object-cover rounded-2xl ">
+                <div class=" p-4 border rounded-2xl  ">
+                    <img src=" ./assets/img2.png" alt=""
+                        class="mx-auto 2xl:h-full md:h-full w-full object-cover rounded-2xl ">
                 </div>
                 <!-- third grid -->
-                <div class="border rounded-2xl p-5 ">
+                <div class="border rounded-2xl p-5 w-full ">
                     <img src=" ./assets/img3.png" alt="" class="mx-auto h-full w-full rounded-2xl object-cover">
                 </div>
                 <!-- forth grid -->
-                <div class=" flex flex-col lg:flex-row  border rounded-2xl p-5  space-y-4 ">
-                    <div class="  ">
-                        <img src="./assets/img4.png" alt="" class="mx-auto h-full w-full object-cover rounded-2xl">
+                <div
+                    class=" flex flex-col lg:flex-row  border rounded-2xl p-5  space-y-4 md:col-span-2 2xl:col-span-1 ">
+                    <div class=" w-full  ">
+                        <img src="./assets/img4.png" alt="" class="mx-auto 2xl:h-full  w-full object-cover rounded-2xl">
                     </div>
-                    <div class="lg:ml-10">
+                    <div class="lg:ml-10 2xl:ml-10 md:w-full md:space-y-7  md:flex md:flex-col justify-center">
                         <h1 class="text-xl font-extrabold mb-3">Commercial</h1>
                         <p class="text-xl mb-3">The barn house captivates with its blend of rustic charm and modern.</p>
                         <p class="text-xl font-bold">View Details<i
@@ -283,12 +291,15 @@
                 <div class=" border rounded-2xl p-4  ">
                     <img src="./assets/img5.png" alt="" class="mx-auto h-full w-full object-cover rounded-2xl">
                 </div>
+                <div class=" border rounded-2xl p-4 2xl:hidden ">
+                    <img src="./assets/img3.png" alt="" class="mx-auto h-full w-full object-cover rounded-2xl">
+                </div>
             </div>
         </section>
         <!-- client content -->
         <section>
-            <div class=" lg:w-3/4 mx-auto mt-10 p-3">
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 ">
+            <div class=" 2xl:w-3/4 mx-auto mt-10 p-3">
+                <div class="grid grid-cols-1 2x:grid-cols-3 md:grid-cols-2 gap-5 ">
                     <!-- frist card -->
                     <div class="  image-full p-5 border rounded-md shadow-xl ">
                         <figure>
@@ -320,7 +331,7 @@
                         </div>
                     </div>
                     <!-- third card -->
-                    <div class="  image-full p-5 border rounded-md shadow-xl ">
+                    <div class=" md:hidden image-full p-5 border rounded-md shadow-xl ">
                         <figure>
                             <img src="./assets/carg-img-4.jpg" alt="" class="w-full rounded-md" />
                         </figure>
@@ -337,7 +348,7 @@
 
 
                 </div>
-                <div class="mt-10">
+                <div class="mt-10 md:w-4/5 mx-auto">
                     <div class="collapse collapse-plus bg-base-200 mb-5">
                         <input type="radio" name="my-accordion-3" checked="checked" />
                         <div class="collapse-title text-2xl font-bold text-center uppercase ">The frist Home Detelas to
@@ -406,52 +417,65 @@
                     modern sophistication,<br> featuring weathered
                     wood, sleek
                     metal accents.</p>
-                <div class="grid grid-cols-1 lg:grid-cols-3 lg:w-3/4 mx-auto gap-5 p-3  ">
+                <div class="grid grid-cols-1 2xl:grid-cols-3 2xl:w-3/4 mx-auto md:grid-cols-1 gap-5 p-3  ">
                     <!-- frist card -->
-                    <div class="border rounded-2xl p-5 space-y-2">
-                        <img src="./assets/article1.png" alt="" class="w-full">
-                        <div class="flex gap-5">
-                            <div class="flex gap-4 items-center">
-                                <i class="fa-regular fa-calendar-days text-xl text-gray-500 "></i>
-                                <h1>July14, 2024</h1>
-                            </div>
-                            <div class="flex gap-4 items-center">
-                                <i class="fa-regular fa-circle-user text-xl text-gray-500 "></i>
-                                <h1>By Admin</h1>
-                            </div>
+                    <div class="border rounded-2xl p-5 space-y-2 md:flex md:gap-10 2xl:flex-col lg:flex">
+                        <div>
+                            <img src="./assets/article1.png" alt="" class="w-full">
                         </div>
-                        <h1 class="text-2xl font-extrabold text-gray-600">How to choose the furniture right <br> of your
-                            home.</h1>
-                        <p class="text-gray-500">The barn house captivates with its blend <br> of rustic charm and
-                            modern. </p>
-                        <p class="text-xl font-bold ">Read More<i
-                                class="fa-solid fa-arrow-right-long bg-primary-1 p-3 rounded-full -rotate-45 ml-3"></i>
-                        </p>
+                        <div>
+                            <div class="flex gap-5">
+                                <div class="flex gap-4 items-center">
+                                    <i class="fa-regular fa-calendar-days text-xl text-gray-500 "></i>
+                                    <h1>July14, 2024</h1>
+                                </div>
+                                <div class="flex gap-4 items-center">
+                                    <i class="fa-regular fa-circle-user text-xl text-gray-500 "></i>
+                                    <h1>By Admin</h1>
+                                </div>
+                            </div>
+
+                            <h1 class="text-2xl font-extrabold text-gray-600">How to choose the furniture right <br> of
+                                your
+                                home.</h1>
+                            <p class="text-gray-500">The barn house captivates with its blend <br> of rustic charm and
+                                modern. </p>
+                            <p class="text-xl font-bold ">Read More<i
+                                    class="fa-solid fa-arrow-right-long bg-primary-1 p-3 rounded-full -rotate-45 ml-3"></i>
+                            </p>
+                        </div>
                     </div>
                     <!-- secend card -->
-                    <div class="border rounded-2xl p-5 space-y-2">
-                        <img src="./assets/article2.png" alt="" class="w-full">
-                        <div class="flex gap-5">
-                            <div class="flex gap-4 items-center">
-                                <i class="fa-regular fa-calendar-days text-xl text-gray-500 "></i>
-                                <h1>July14, 2024</h1>
-                            </div>
-                            <div class="flex gap-4 items-center">
-                                <i class="fa-regular fa-circle-user text-xl text-gray-500 "></i>
-                                <h1>By Admin</h1>
-                            </div>
+                    <div class="border rounded-2xl p-5 space-y-2 md:flex md:gap-10 2xl:flex-col lg:flex">
+                        <div>
+                            <img src="./assets/article2.png" alt="" class="w-full">
                         </div>
-                        <h1 class="text-2xl font-extrabold text-gray-600">How to choose the furniture right <br> of your
-                            home.</h1>
-                        <p class="text-gray-500">The barn house captivates with its blend <br> of rustic charm and
-                            modern. </p>
-                        <p class="text-xl font-bold ">Read More<i
-                                class="fa-solid fa-arrow-right-long bg-primary-1 p-3 rounded-full -rotate-45 ml-3"></i>
-                        </p>
+                        <div>
+                            <div class="flex gap-5">
+                                <div class="flex gap-4 items-center">
+                                    <i class="fa-regular fa-calendar-days text-xl text-gray-500 "></i>
+                                    <h1>July14, 2024</h1>
+                                </div>
+                                <div class="flex gap-4 items-center">
+                                    <i class="fa-regular fa-circle-user text-xl text-gray-500 "></i>
+                                    <h1>By Admin</h1>
+                                </div>
+                            </div>
+                            <h1 class="text-2xl font-extrabold text-gray-600">How to choose the furniture right <br> of your
+                                home.</h1>
+                            <p class="text-gray-500">The barn house captivates with its blend <br> of rustic charm and
+                                modern. </p>
+                            <p class="text-xl font-bold ">Read More<i
+                                    class="fa-solid fa-arrow-right-long bg-primary-1 p-3 rounded-full -rotate-45 ml-3"></i>
+                            </p>
+                        </div>
                     </div>
                     <!-- third card -->
-                    <div class="border rounded-2xl p-5 space-y-2">
+                    <div class="border rounded-2xl p-5 space-y-2 md:flex md:gap-10 2xl:flex-col lg:flex">
+                       <div>
                         <img src="./assets/article3.png" alt="" class="w-full">
+                       </div>
+                       <div>
                         <div class="flex gap-5">
                             <div class="flex gap-4 items-center">
                                 <i class="fa-regular fa-calendar-days text-xl text-gray-500 "></i>
@@ -469,6 +493,7 @@
                         <p class="text-xl font-bold ">Read More<i
                                 class="fa-solid fa-arrow-right-long bg-primary-1 p-3 rounded-full -rotate-45 ml-3"></i>
                         </p>
+                       </div>
                     </div>
                 </div>
             </div>
